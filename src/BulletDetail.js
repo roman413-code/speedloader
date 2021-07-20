@@ -93,7 +93,8 @@ export default function BulletDetail(){
           variant="outlined"
         />
         <div className={classes.break}></div>
-        <Button>
+        <Button
+        variant='contained'>
             Submit
         </Button>
       </div>

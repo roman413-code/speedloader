@@ -59,5 +59,26 @@ export const MockBullets = [
     first_name: 'Ron',
     last_name: 'Mexico',
     note: "Acquired $161K TSCIF at no-cost--liaised w/AFSOC to develop new UTC/trng f/30 mbrs--dbl'd wg's deply'd TS cape"
+},
+{
+    id: 3,
+    rank: 'TSgt',
+    first_name: 'Arnold',
+    last_name: 'Palmer',
+    note: " Blasted aircrew tng cert/cut cert time 50%--instructed 10 hrs--38 crew mbrs current on critical Go/No Go item"
+},
+{
+    id: 4,
+    rank: 'SSgt',
+    first_name: 'Ron',
+    last_name: 'Mexico',
+    note: " Delivered 10 changeover briefs to ICC/CC; ensured 24 hour ISR asset spt--critical EX KEY RESOLVE player"
+},
+{
+    id: 5,
+    rank: 'MSgt',
+    first_name: 'Ryan',
+    last_name: 'Fitzhugh',
+    note: "Lead 6 jr intel analysts; supervised execution of mission drawdown and reorganization--created 2 new divisions"
 }
 ];
