@@ -1,16 +1,18 @@
 import React from "react";
-import { MockBullets } from "./MockBullets";
+import { MockBullets } from "./constants/Constants";
 import { useParams } from "react-router";
-import { Slider, Typography, makeStyles } from "@material-ui/core";
-
+import { Slider, Typography, makeStyles, TextField, Button } from "@material-ui/core";
+import { marks } from "./constants/Constants";
 const useStyles = makeStyles((theme) => ({
     root: {
       height: 300,
       display: 'flex',
+      flexWrap: 'wrap',
       justifyContent: 'center',
       backgroundColor: 'wheat',
       color: 'black',
       padding: 100,
+      marginBottom: 2,
       
     },
     margin: {
@@ -26,58 +28,16 @@ const useStyles = makeStyles((theme) => ({
         borderBottom: 25,
         marginBottom: 2,
         
+    },
+    break: {
+        flexBasis: 800
     }
   }));
 
 export default function BulletDetail(){
     const classes = useStyles();
     let { id } = useParams()
-    const marks = [
-        {
-            value: 0,
-            label: '0',
-          },
-          {
-            value: 1,
-            label: '1',
-          },
-          {
-            value: 2,
-            label: '2',
-          },
-          {
-            value: 3,
-            label: '3',
-          },
-          {
-            value: 4,
-            label: '4',
-          },
-          {
-            value: 5,
-            label: '5',
-          },
-          {
-            value: 6,
-            label: '6',
-          },
-          {
-            value: 7,
-            label: '7',
-          },
-          {
-            value: 8,
-            label: '8',
-          },
-          {
-            value: 9,
-            label: '9',
-          },
-          {
-            value: 10,
-            label: '10',
-          },
-    ]
+    
     const selectedBullet = MockBullets.filter(element => element.id == id )
     console.log(selectedBullet[0].note)
     return(
@@ -124,8 +84,20 @@ export default function BulletDetail(){
           step={null}
           marks={marks}
           max={10}
+        /> 
+      <TextField
+          id="outlined-multiline-static"
+          label="Comments"
+          multiline
+          rows={4}
+          variant="outlined"
         />
+        <div className={classes.break}></div>
+        <Button>
+            Submit
+        </Button>
       </div>
+      
     </React.Fragment>
         
         </div>

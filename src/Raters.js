@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '@material-ui/core';
 import { DataGrid } from '@material-ui/data-grid';
-import { MockBullets as mockBullets } from './MockBullets';
+import { MockBullets as mockBullets } from './constants/Constants';
 import { Link } from 'react-router-dom';
 
 export default function Raters(){
